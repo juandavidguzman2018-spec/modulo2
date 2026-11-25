@@ -1,0 +1,15 @@
+<ActionBar title="Inicio" class="action-bar">
+  <NavigationButton visibility="hidden"></NavigationButton>
+  <ActionItem text="Menú" ios.position="left" android.position="actionBar" (tap)="onDrawerButtonTap()"></ActionItem>
+</ActionBar>
+
+<ScrollView backgroundColor="#eef4f2">
+  <StackLayout padding="28">
+    <Image src="res://study_badge" width="112" height="112" horizontalAlignment="left" marginTop="24"></Image>
+    <Label text="Ruta de estudio" fontSize="32" fontWeight="bold" color="#123930" marginTop="22" textWrap="true"></Label>
+    <Label text="Explora los recursos del módulo, busca por tema y clasifica lo que quieras repasar."
+      fontSize="18" color="#45645d" marginTop="12" textWrap="true"></Label>
+    <Button text="Buscar recursos" (tap)="openCatalog()" backgroundColor="#145349" color="#ffffff"
+      minHeight="48" borderRadius="10" marginTop="23" horizontalAlignment="left"></Button>
+  </StackLayout>
+</ScrollView>
